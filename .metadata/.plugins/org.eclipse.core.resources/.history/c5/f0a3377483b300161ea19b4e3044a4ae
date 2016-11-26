@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Group_Project {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		System.out.println("Please enter your name");
+		Scanner scanner = new Scanner(System.in);
+		String Name=scanner.nextLine();
+		System.out.println("Hello" + Name );
+		
+
+	}
+
+}
