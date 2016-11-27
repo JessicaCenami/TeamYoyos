@@ -5,15 +5,20 @@ public class Group_Project {
 	//Makes stuff work 
 	public static void main(String[] args) {
 		//Test to see if Eclipse is working
-		System.out.println("Hello Group");
+		//Array to print out the string "Hello."
+		char [] helloArray = { 'H', 'e', 'l', 'l', 'o', '.'};
+		String helloString = new String(helloArray);
+		System.out.println(helloString);
+		//End of String Array
+		
 		System.out.println("Today we are going to mix some colors.");
 		System.out.println("We will mix blue and orange and we should get a neutral color.");
 		System.out.println("We will only get a neutral color if the sum of the blue and orange are equal to 25.");
 		System.out.println("We will be using random integers to accomplish this\n\n");
 		//Declare Variables
 		double blue=Math.random()*(50-0)+0;
-		int orange=2; 
-		boolean neutral = true;
+		int orange=5; 
+		//boolean neutral = true;
 		//write some code
 		if (blue+orange == 25)
 System.out.println("The answer is 25 meaning that "
@@ -27,14 +32,55 @@ System.out.println("The answer is 25 meaning that "
 else 
 	System.out.println("This experiment has failed. Try again next time, champ");
 		
-
+		//Call a custom method
+		char randomChar = 'q';
+		randomChar=customMethodToDoStuff();
+		System.out.println("Our random letter is: " + randomChar);
 		
-		
-
-	
-	
 	
 }
+
+	private static char customMethodToDoStuff() {
+		System.out.println("\n\nHello Method");
+		char randomLetter = 'q';
+		return randomLetter;
+		
+		/*Call a custom method for my while loop
+		 * 		int counter = 0;
+		customMethodForWhileLoop();
+		 */
+
+		
+		
+		
+		}
+
+	private static int customMethodForWhileLoop() {
+		System.out.println("Hello loops");
+		int counter = 0;
+		while (counter < 50){
+		System.out.println(counter);
+		counter++;
+		}
+		return counter;
+		//Boolean method
+		//customMethodToCallABoolean();
+		
 	}
+
+	private static void customMethodToCallABoolean() {
+		//Boolean woo!
+		Boolean bool = true;
+
+	    if (bool) {
+	      System.out.println("bool = true");
+	    } else {
+	      System.out.println("bool = false");
+		
+	}
+			
+	}
+}
+	
 
 
